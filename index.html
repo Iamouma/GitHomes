@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHomes landing page</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet"
+    >
+</head>
+
+<body>
+    <!-- Navigation link -->
+    <nav id="navigation">
+        <div class="wrapper">
+            <div class="logo">
+                <h1>GITHOMES</h1>
+            </div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#rent">Amenity</a></li>
+                <li><a href="#testimonial">Contact</a></li>
+            </ul>
+
+            <a href="" class="button">Get Started</a>
+        </div>
+
+        <button onclick="openMenu()" class="open-menu">
+            <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg" 
+            >
+                <path
+                    d="M10 20H30"
+                    stroke="#00856F"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" 
+                >
+                </path>
+                <path
+                    d="M10 12H30"
+                    stroke="#00856F"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                </path>
+                <path
+                    d="M18 28L30 28"
+                    stroke="#00856F"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" 
+                >
+                </path>
+            </svg>
+        </button>
+
+        <button onclick="closeMenu()" class="close-menu">
+            <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M30 10L10 30M10 10L30 30"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                </path>
+            </svg>
+        </button>
+    </nav>
+
+    <!-- Section -->
+    <section id="home">
+        <div class="wrapper">
+            <div class="image colA">
+                <img
+                    src="Images/image12.jpg"
+                    alt=""
+                >
+                <span class="first-circle"></span>
+                <span class="second-circle"></span>
+            </div>
+
+            <div class="colB">
+                <header>
+                   <h1>Helping you Find the Right Space for You</h1>
+                   <p>
+                        Each of our projects boasts a distinct design style, aimed at
+                        offering a desirable lifestyle that distinguishes us from others.
+                   </p>
+                </header>
+
+                <a href="" class="button">Learn more</a>
+            </div>
+
+            <form action="">
+                <div class="field">
+                    <label for="location">
+                        Location
+                        <svg
+                            width="13"
+                            height="14"
+                            viewBox="0 0 13 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg" 
+                        >
+                        <path
+                            d="M1.98551 4.09766L1.07491 5.00826L6.21958 10.1529L11.3643 5.00826L10.4537 4.09766L6.21958 8.33172L1.98551 4.09766Z"
+                            fill="#0F298B"
+                        >
+                        </path>
+                        </svg>
+                    </label>
+
+                    <select name="location" id="location">
+                        <option value="Karen" selected>Karen</option>
+                        <option value="Runda" selected>Runda</option>
+                        <option value="Lavington" selected>Lavington</option>
+                        <option value="Kileleshwa" selected>Kileleshwa</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="maxPrice">
+                        Max Price
+                        <svg
+                            width="13"
+                            height="14"
+                            viewBox="0 0 13 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg" 
+                        >
+                            <path
+                                d="M1.98551 4.09766L1.07491 5.00826L6.21958 10.1529L11.3643 5.00826L10.4537 4.09766L6.21958 8.33172L1.98551 4.09766Z"
+                                fill="#0F298B" 
+                            >
+                            </path>
+                        </svg>
+                    </label>
+                    <select name="maxPrice" id="maxPrice">
+                        <option value="10000" selected>$10,000</option>
+                        <option value="10000" selected>$110,000</option>
+                        <option value="10000" selected>$250,000</option>
+                        <option value="10000" selected>$510,000</option>
+                        <option value="10000" selected>$700,000</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="Rooms">
+                        Rooms
+                        <svg
+                            width="13"
+                            height="14"
+                            viewBox="0 0 13 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg" 
+                        >
+                            <path
+                                d="M1.98551 4.09766L1.07491 5.00826L6.21958 10.1529L11.3643 5.00826L10.4537 4.09766L6.21958 8.33172L1.98551 4.09766Z"
+                                fill="#0F298B" 
+                            >
+                            </path>
+                        </svg>
+                    </label>
+                    <select name="Rooms" id="Rooms">
+                        <option value="1 - 3" selected>1 - 3</option>
+                        <option value="4 - 7" selected>4 - 7</option>
+                        <option value="8 -11" selected>8 - 11</option>  
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="sq ft">
+                        Sq Ft
+                        <svg
+                            width="13"
+                            height="14"
+                            viewBox="0 0 13 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg" 
+                        >
+                            <path
+                                d="M1.98551 4.09766L1.07491 5.00826L6.21958 10.1529L11.3643 5.00826L10.4537 4.09766L6.21958 8.33172L1.98551 4.09766Z"
+                                fill="#0F298B" 
+                            >
+                            </path>
+                        </svg>
+                    </label>
+                    <select name="sq ft" id="sq ft">
+                        <option value="1,000 - 1,500sqm" selected>1,000 - 1,500sqm</option>
+                        <option value="1,500 - 2,000sqm" selected>1,500 - 2,000sqm</option>
+                        <option value="2,000 - 2,500sqm" selected>2,000 - 2,500sqm</option>
+                        <option value="2,500 - 3,000sqm" selected>2,500 - 3,000sqm</option>  
+                    </select>
+                </div>
+
+                <div>
+                    <button type="submit">
+                        <svg
+                            width="19"
+                            height="19"
+                            viewBox="0 0 19 19"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M8 16C9.77498 15.9996 11.4988 15.4054 12.897 14.312L17.293 18.708L18.707 17.294L14.311 12.898C15.405 11.4997 15.9996 9.77544 16 8C16 3.589 12.411 0 8 0C3.589 0 0 3.589 0 8C0 12.411 3.589 16 8 16ZM8 2C11.309 2 14 4.691 14 8C14 11.309 11.309 14 8 14C4.691 14 2 11.309 2 8C2 4.691 4.691 2 8 2Z"
+                                fill="white"
+                            >
+                            </path>
+                        </svg>
+                        Search
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="wrapper">
+            <header>
+                <h2>How it works</h2>
+                <p>This is how our products works</p>
+            </header>
+
+            <div class="cards">
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                        d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"
+                        >
+                        </path>
+                    </svg>
+                    <h3>Find Your Dream Home</h3>
+                    <p>
+                        Our properties are located at prime areas where by there won’t be
+                        problem with transportation
+                    </p>
+                </div>
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                        d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"
+                        >
+                        </path>
+                    </svg>
+                    <h3>Find Your Dream Home</h3>
+                    <p>
+                        Our properties are located at prime areas where by there won’t be
+                        problem with transportation
+                    </p>
+                </div>
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                        d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"
+                        >
+                        </path>
+                    </svg>
+                    <h3>Find Your Dream Home</h3>
+                    <p>
+                        Our properties are located at prime areas where by there won’t be
+                        problem with transportation
+                    </p>
+                </div>
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                        d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"
+                        >
+                        </path>
+                    </svg>
+                    <h3>Find Your Dream Home</h3>
+                    <p>
+                        Our properties are located at prime areas where by there won’t be
+                        problem with transportation
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="wrapper">
+            <div class="colA">
+                <img
+                    src="Images/image16.jpg"
+                    alt=""
+                >
+            </div>
+            <div class="colB">
+                <header>
+                    <h2>Why You should choose us</h2>
+                    <p>
+                        Creating quality urban lifestyle, buildings stronger communities
+                    </p>
+                </header>
+
+                <ul>
+                    <li>
+                        <svg
+                            width="25"
+                            height="25"
+                            viewBox="0 0 25 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M19.319 24.5H5.60471C2.76928 24.5 0.461853 22.1926 0.461853 19.3571V5.64286C0.461853 2.80743 2.76928 0.5 5.60471 0.5H14.1761C14.6308 0.5 15.0668 0.680612 15.3883 1.0021C15.7098 1.32359 15.8904 1.75963 15.8904 2.21429C15.8904 2.66894 15.7098 3.10498 15.3883 3.42647C15.0668 3.74796 14.6308 3.92857 14.1761 3.92857H5.60471C4.65842 3.92857 3.89042 4.69829 3.89042 5.64286V19.3571C3.89042 20.3017 4.65842 21.0714 5.60471 21.0714H19.319C20.2653 21.0714 21.0333 20.3017 21.0333 19.3571V14.2143C21.0333 13.7596 21.2139 13.3236 21.5354 13.0021C21.8569 12.6806 22.2929 12.5 22.7476 12.5C23.2022 12.5 23.6383 12.6806 23.9598 13.0021C24.2812 13.3236 24.4619 13.7596 24.4619 14.2143V19.3571C24.4619 22.1926 22.1544 24.5 19.319 24.5ZM14.4607 17.3566C13.8607 17.3566 13.2796 17.1183 12.8476 16.6863L8.27385 12.1143C7.86245 11.6819 7.63642 11.1057 7.64401 10.5089C7.6516 9.91211 7.89222 9.34192 8.31448 8.9201C8.73675 8.49828 9.3072 8.25827 9.90402 8.25131C10.5008 8.24435 11.0767 8.471 11.5087 8.88286L13.9361 11.312L19.8933 1.96057C20.0341 1.68923 20.2278 1.44886 20.4631 1.25369C20.6984 1.05852 20.9704 0.912506 21.2631 0.824275C21.5558 0.736043 21.8632 0.707388 22.1672 0.740005C22.4711 0.772621 22.7654 0.865846 23.0327 1.01417C23.3 1.16249 23.5349 1.3629 23.7234 1.60355C23.9119 1.8442 24.0503 2.1202 24.1303 2.41524C24.2103 2.71028 24.2304 3.01836 24.1893 3.32128C24.1482 3.6242 24.0467 3.91581 23.891 4.17886L16.4613 16.1789C16.2897 16.4881 16.0487 16.7533 15.7571 16.9535C15.4656 17.1538 15.1315 17.2835 14.7813 17.3326L14.4607 17.3566V17.3566Z"
+                                fill="#2549D3" 
+                            >
+                            </path>
+                        </svg>
+                        World class
+                    </li>
+                    <li>
+                        <svg
+                            width="25"
+                            height="25"
+                            viewBox="0 0 25 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M19.319 24.5H5.60471C2.76928 24.5 0.461853 22.1926 0.461853 19.3571V5.64286C0.461853 2.80743 2.76928 0.5 5.60471 0.5H14.1761C14.6308 0.5 15.0668 0.680612 15.3883 1.0021C15.7098 1.32359 15.8904 1.75963 15.8904 2.21429C15.8904 2.66894 15.7098 3.10498 15.3883 3.42647C15.0668 3.74796 14.6308 3.92857 14.1761 3.92857H5.60471C4.65842 3.92857 3.89042 4.69829 3.89042 5.64286V19.3571C3.89042 20.3017 4.65842 21.0714 5.60471 21.0714H19.319C20.2653 21.0714 21.0333 20.3017 21.0333 19.3571V14.2143C21.0333 13.7596 21.2139 13.3236 21.5354 13.0021C21.8569 12.6806 22.2929 12.5 22.7476 12.5C23.2022 12.5 23.6383 12.6806 23.9598 13.0021C24.2812 13.3236 24.4619 13.7596 24.4619 14.2143V19.3571C24.4619 22.1926 22.1544 24.5 19.319 24.5ZM14.4607 17.3566C13.8607 17.3566 13.2796 17.1183 12.8476 16.6863L8.27385 12.1143C7.86245 11.6819 7.63642 11.1057 7.64401 10.5089C7.6516 9.91211 7.89222 9.34192 8.31448 8.9201C8.73675 8.49828 9.3072 8.25827 9.90402 8.25131C10.5008 8.24435 11.0767 8.471 11.5087 8.88286L13.9361 11.312L19.8933 1.96057C20.0341 1.68923 20.2278 1.44886 20.4631 1.25369C20.6984 1.05852 20.9704 0.912506 21.2631 0.824275C21.5558 0.736043 21.8632 0.707388 22.1672 0.740005C22.4711 0.772621 22.7654 0.865846 23.0327 1.01417C23.3 1.16249 23.5349 1.3629 23.7234 1.60355C23.9119 1.8442 24.0503 2.1202 24.1303 2.41524C24.2103 2.71028 24.2304 3.01836 24.1893 3.32128C24.1482 3.6242 24.0467 3.91581 23.891 4.17886L16.4613 16.1789C16.2897 16.4881 16.0487 16.7533 15.7571 16.9535C15.4656 17.1538 15.1315 17.2835 14.7813 17.3326L14.4607 17.3566V17.3566Z"
+                                fill="#2549D3" 
+                            >
+                            </path>
+                        </svg>
+                        Affordable
+                    </li>
+                    <li>
+                        <svg
+                            width="25"
+                            height="25"
+                            viewBox="0 0 25 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M19.319 24.5H5.60471C2.76928 24.5 0.461853 22.1926 0.461853 19.3571V5.64286C0.461853 2.80743 2.76928 0.5 5.60471 0.5H14.1761C14.6308 0.5 15.0668 0.680612 15.3883 1.0021C15.7098 1.32359 15.8904 1.75963 15.8904 2.21429C15.8904 2.66894 15.7098 3.10498 15.3883 3.42647C15.0668 3.74796 14.6308 3.92857 14.1761 3.92857H5.60471C4.65842 3.92857 3.89042 4.69829 3.89042 5.64286V19.3571C3.89042 20.3017 4.65842 21.0714 5.60471 21.0714H19.319C20.2653 21.0714 21.0333 20.3017 21.0333 19.3571V14.2143C21.0333 13.7596 21.2139 13.3236 21.5354 13.0021C21.8569 12.6806 22.2929 12.5 22.7476 12.5C23.2022 12.5 23.6383 12.6806 23.9598 13.0021C24.2812 13.3236 24.4619 13.7596 24.4619 14.2143V19.3571C24.4619 22.1926 22.1544 24.5 19.319 24.5ZM14.4607 17.3566C13.8607 17.3566 13.2796 17.1183 12.8476 16.6863L8.27385 12.1143C7.86245 11.6819 7.63642 11.1057 7.64401 10.5089C7.6516 9.91211 7.89222 9.34192 8.31448 8.9201C8.73675 8.49828 9.3072 8.25827 9.90402 8.25131C10.5008 8.24435 11.0767 8.471 11.5087 8.88286L13.9361 11.312L19.8933 1.96057C20.0341 1.68923 20.2278 1.44886 20.4631 1.25369C20.6984 1.05852 20.9704 0.912506 21.2631 0.824275C21.5558 0.736043 21.8632 0.707388 22.1672 0.740005C22.4711 0.772621 22.7654 0.865846 23.0327 1.01417C23.3 1.16249 23.5349 1.3629 23.7234 1.60355C23.9119 1.8442 24.0503 2.1202 24.1303 2.41524C24.2103 2.71028 24.2304 3.01836 24.1893 3.32128C24.1482 3.6242 24.0467 3.91581 23.891 4.17886L16.4613 16.1789C16.2897 16.4881 16.0487 16.7533 15.7571 16.9535C15.4656 17.1538 15.1315 17.2835 14.7813 17.3326L14.4607 17.3566V17.3566Z"
+                                fill="#2549D3" 
+                            >
+                            </path>
+                        </svg>
+                        Trusted
+                    </li>
+                    <li>
+                        <svg
+                            width="25"
+                            height="25"
+                            viewBox="0 0 25 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M19.319 24.5H5.60471C2.76928 24.5 0.461853 22.1926 0.461853 19.3571V5.64286C0.461853 2.80743 2.76928 0.5 5.60471 0.5H14.1761C14.6308 0.5 15.0668 0.680612 15.3883 1.0021C15.7098 1.32359 15.8904 1.75963 15.8904 2.21429C15.8904 2.66894 15.7098 3.10498 15.3883 3.42647C15.0668 3.74796 14.6308 3.92857 14.1761 3.92857H5.60471C4.65842 3.92857 3.89042 4.69829 3.89042 5.64286V19.3571C3.89042 20.3017 4.65842 21.0714 5.60471 21.0714H19.319C20.2653 21.0714 21.0333 20.3017 21.0333 19.3571V14.2143C21.0333 13.7596 21.2139 13.3236 21.5354 13.0021C21.8569 12.6806 22.2929 12.5 22.7476 12.5C23.2022 12.5 23.6383 12.6806 23.9598 13.0021C24.2812 13.3236 24.4619 13.7596 24.4619 14.2143V19.3571C24.4619 22.1926 22.1544 24.5 19.319 24.5ZM14.4607 17.3566C13.8607 17.3566 13.2796 17.1183 12.8476 16.6863L8.27385 12.1143C7.86245 11.6819 7.63642 11.1057 7.64401 10.5089C7.6516 9.91211 7.89222 9.34192 8.31448 8.9201C8.73675 8.49828 9.3072 8.25827 9.90402 8.25131C10.5008 8.24435 11.0767 8.471 11.5087 8.88286L13.9361 11.312L19.8933 1.96057C20.0341 1.68923 20.2278 1.44886 20.4631 1.25369C20.6984 1.05852 20.9704 0.912506 21.2631 0.824275C21.5558 0.736043 21.8632 0.707388 22.1672 0.740005C22.4711 0.772621 22.7654 0.865846 23.0327 1.01417C23.3 1.16249 23.5349 1.3629 23.7234 1.60355C23.9119 1.8442 24.0503 2.1202 24.1303 2.41524C24.2103 2.71028 24.2304 3.01836 24.1893 3.32128C24.1482 3.6242 24.0467 3.91581 23.891 4.17886L16.4613 16.1789C16.2897 16.4881 16.0487 16.7533 15.7571 16.9535C15.4656 17.1538 15.1315 17.2835 14.7813 17.3326L14.4607 17.3566V17.3566Z"
+                                fill="#2549D3" 
+                            >
+                            </path>
+                        </svg>
+                        Amenities
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="rent">
+            <div class="wrapper">
+                <header>
+                    <h2>Our Featured Properties</h2>
+                    <p>
+                        One of our biggest product to be featured and that has sold out the
+                        most.
+                    </p>
+                </header>
+
+                <div class="cards">
+                    <div class="card">
+                        <img
+                            src="Images/image2.jpg"
+                            alt=""
+                        >
+                        <div class="rent">
+                            <div class="place">
+                                <h3>Apartment</h3>
+                                <p>Lower Kabete</p>
+                            </div>
+                            <div class="information">
+                                <span>Duplex</span>
+                                <span>$10,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="Images/image2.jpg"
+                            alt=""
+                        >
+                        <div class="rent">
+                            <div class="place">
+                                <h3>Apartment</h3>
+                                <p>Lower Kabete</p>
+                            </div>
+                            <div class="information">
+                                <span>Duplex</span>
+                                <span>$10,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="Images/image2.jpg"
+                            alt=""
+                        >
+                        <div class="rent">
+                            <div class="place">
+                                <h3>Apartment</h3>
+                                <p>Lower Kabete</p>
+                            </div>
+                            <div class="information">
+                                <span>Duplex</span>
+                                <span>$10,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="Images/image2.jpg"
+                            alt=""
+                        >
+                        <div class="rent">
+                            <div class="place">
+                                <h3>Apartment</h3>
+                                <p>Lower Kabete</p>
+                            </div>
+                            <div class="information">
+                                <span>Duplex</span>
+                                <span>$10,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="Images/image2.jpg"
+                            alt=""
+                        >
+                        <div class="rent">
+                            <div class="place">
+                                <h3>Apartment</h3>
+                                <p>Lower Kabete</p>
+                            </div>
+                            <div class="information">
+                                <span>Duplex</span>
+                                <span>$10,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="button">View More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="wrapper">
+            <header>
+                <h2>Testimonials</h2>
+                <p>
+                    This is what our clients are saying
+                </p>
+            </header>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>James Kamau</h3>
+                    <span>Kiambu</span>
+                    <p>
+                        dfghjklpoiuytresdfgchjbkloiuytfgcvhbnm,
+                        kljhgfdsfghjkl;kjhgfhbjkl;'
+                        lfsdghjkl;'iouytfrdfghjkl;'
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>James Kamau</h3>
+                    <span>Kiambu</span>
+                    <p>
+                        dfghjklpoiuytresdfgchjbkloiuytfgcvhbnm,
+                        kljhgfdsfghjkl;kjhgfhbjkl;'
+                        lfsdghjkl;'iouytfrdfghjkl;'
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>James Kamau</h3>
+                    <span>Kiambu</span>
+                    <p>
+                        dfghjklpoiuytresdfgchjbkloiuytfgcvhbnm,
+                        kljhgfdsfghjkl;kjhgfhbjkl;'
+                        lfsdghjkl;'iouytfrdfghjkl;'
+                    </p>
+                </div>
+            </div>
+            <a href="" class="button">View More</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <div class="business">
+                <div class="logo">
+                    <h1>GITHOMES</h1>
+                </div>
+                <p>
+                    Solution for easy and flexible house hunting.You can trust us
+                    anywhere through this platform
+                </p>
+            </div>
+            <div class="menus">
+                <ul class="list-links">
+                    <h3>Property</h3>
+                    <li><a href="">Learning Modules</a></li>
+                    <li><a href="">Partnership</a></li>
+                    <li><a href="">Watch demo</a></li>
+                    <li><a href="">Event</a></li>
+                </ul>
+                <ul class="list-links">
+                    <h3>About</h3>
+                    <li><a href="">Learning Modules</a></li>
+                    <li><a href="">Partnership</a></li>
+                    <li><a href="">Watch demo</a></li>
+                    <li><a href="">Event</a></li>
+                </ul>
+                <ul class="list-links">
+                    <h3>Resources</h3>
+                    <li><a href="">Learning Modules</a></li>
+                    <li><a href="">Partnership</a></li>
+                    <li><a href="">Watch demo</a></li>
+                    <li><a href="">Event</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script defer src="js/main.js"></script>
+</body>
+</html>

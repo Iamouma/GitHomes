@@ -1,0 +1,139 @@
+/* RESPONSIVE */
+@media (min-width: 1024px) {
+    .wrapper {
+      width: min(110rem, 100%);
+      display: grid;
+    }
+  
+    .colA {
+      grid-area: A;
+    }
+  
+    .colB {
+      grid-area: B;
+    }
+  
+    /* NAVIGATION */
+    /* RESET */
+    nav#navigation .wrapper * {
+      margin: 0;
+      padding: 0;
+      display: initial;
+      opacity: initial;
+      transform: initial;
+      position: initial;
+      visibility: initial;
+    }
+  
+    nav#navigation .close-menu,
+    nav#navigation .open-menu {
+      display: none;
+    }
+  
+    nav#navigation .menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+      width: 65%;
+    }
+  
+    nav#navigation .menu ul {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+    }
+  
+    nav#navigation .menu .button {
+      padding: 1rem 2rem;
+    }
+    /* HOME */
+    section#home .wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "B A";
+    }
+  
+    section#home .colB {
+      align-self: center;
+    }
+  
+    section#home .image {
+      margin-bottom: 0;
+    }
+  
+    section#home form {
+      grid-column: span 2;
+  
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  
+    section#home form .field {
+      width: fit-content;
+    }
+  
+    /* SERVICES */
+    section#services .cards {
+      flex-direction: row;
+    }
+  
+    /* ABOUT */
+    section#about .wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "A B";
+    }
+  
+    section#about .colB {
+      align-self: center;
+      text-align: left;
+      padding-left: 4rem;
+    }
+  
+    section#about ul {
+      width: initial;
+    }
+  
+    /* RENT */
+    section#rent .wrapper,
+    section#testimonial .wrapper {
+      position: relative;
+    }
+  
+    section#rent .cards {
+      flex-direction: row;
+    }
+  
+    section#rent .button,
+    section#testimonial .button {
+      width: fit-content;
+      position: absolute;
+      right: 0;
+      top: 10rem;
+    }
+  
+    /* TESTIMONIAl */
+    section#testimonial .cards {
+      flex-direction: row;
+    }
+  
+    section#testimonial .card {
+      border-radius: 3rem;
+    }
+  
+    /* FOOTER */
+    footer .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    footer .business {
+      width: 30%;
+    }
+  
+    footer .menus {
+      gap: 10rem;
+    }
+  }

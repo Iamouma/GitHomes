@@ -8,13 +8,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
-    rel="stylesheet"
-    >
 </head>
 
 <body>
@@ -24,73 +17,70 @@
             <div class="logo">
                 <h1>GITHOMES</h1>
             </div>
-        </div>
-        <div class="menu">
-            <ul>
+    
+            <div class="menu">
+                <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#rent">Amenity</a></li>
-                <li><a href="#testimonial">Contact</a></li>
-            </ul>
-
-            <a href="" class="button">Get Started</a>
-        </div>
-
-        <button onclick="openMenu()" class="open-menu">
-            <svg
+                <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+    
+                <a href="" class="button">Get Started</a>
+            </div>
+    
+            <button onclick="openMenu()" class="open-menu">
+                <svg
                 width="40"
                 height="40"
                 viewBox="0 0 40 40"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg" 
-            >
+                xmlns="http://www.w3.org/2000/svg"
+                >
                 <path
                     d="M10 20H30"
                     stroke="#00856F"
                     stroke-width="2"
                     stroke-linecap="round"
-                    stroke-linejoin="round" 
-                >
-                </path>
+                    stroke-linejoin="round"
+                />
                 <path
                     d="M10 12H30"
                     stroke="#00856F"
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                >
-                </path>
+                />
                 <path
                     d="M18 28L30 28"
                     stroke="#00856F"
                     stroke-width="2"
                     stroke-linecap="round"
-                    stroke-linejoin="round" 
-                >
-                </path>
-            </svg>
-        </button>
-
-        <button onclick="closeMenu()" class="close-menu">
-            <svg
+                    stroke-linejoin="round"
+                />
+                </svg>
+            </button>
+    
+            <button onclick="closeMenu()" class="close-menu">
+                <svg
                 width="40"
                 height="40"
                 viewBox="0 0 40 40"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-            >
+                >
                 <path
                     d="M30 10L10 30M10 10L30 30"
                     stroke="#FFFAF1"
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                >
-                </path>
-            </svg>
-        </button>
+                />
+                </svg>
+            </button>
+        </div>
     </nav>
+ 
 
     <!-- Section -->
     <section id="home">
@@ -100,20 +90,18 @@
                     src="Images/image12.jpg"
                     alt=""
                 >
-                <span class="first-circle"></span>
-                <span class="second-circle"></span>
             </div>
 
             <div class="colB">
                 <header>
-                   <h1>Helping you Find the Right Space for You</h1>
+                   <h1>Finding the Right Space for You</h1>
                    <p>
                         Each of our projects boasts a distinct design style, aimed at
                         offering a desirable lifestyle that distinguishes us from others.
                    </p>
                 </header>
 
-                <a href="" class="button">Learn more</a>
+                <a href="" class="button" onclick="return false">Learn more</a>
             </div>
 
             <form action="">
@@ -219,7 +207,7 @@
                 </div>
 
                 <div>
-                    <button type="submit">
+                    <button type="submit" onclick="return false">
                         <svg
                             width="19"
                             height="19"
@@ -255,10 +243,10 @@
                         >
                         </path>
                     </svg>
-                    <h3>Find Your Dream Home</h3>
+                    <h3>Marketing</h3>
                     <p>
-                        Our properties are located at prime areas where by there won’t be
-                        problem with transportation
+                        Creating and executing marketing plans, including online listings,
+                        open houses, virtual tours, professional photography and staging. 
                     </p>
                 </div>
                 <div class="card">
@@ -268,10 +256,10 @@
                         >
                         </path>
                     </svg>
-                    <h3>Find Your Dream Home</h3>
+                    <h3>Selling</h3>
                     <p>
-                        Our properties are located at prime areas where by there won’t be
-                        problem with transportation
+                        Developing and implementing marketing strategies to attract potential buyers.
+                        Assisting sellers through the closing process, including paperwork and legal requirements.
                     </p>
                 </div>
                 <div class="card">
@@ -281,23 +269,10 @@
                         >
                         </path>
                     </svg>
-                    <h3>Find Your Dream Home</h3>
+                    <h3>Renting</h3>
                     <p>
-                        Our properties are located at prime areas where by there won’t be
-                        problem with transportation
-                    </p>
-                </div>
-                <div class="card">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                        <path
-                        d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"
-                        >
-                        </path>
-                    </svg>
-                    <h3>Find Your Dream Home</h3>
-                    <p>
-                        Our properties are located at prime areas where by there won’t be
-                        problem with transportation
+                        Helping property owners find suitable tenants. Managing rental properties, including
+                        maintenance, rent collection and tenants relations.
                     </p>
                 </div>
             </div>
@@ -404,7 +379,7 @@
                 <div class="cards">
                     <div class="card">
                         <img
-                            src="Images/image2.jpg"
+                            src="Images/more4.jpg"
                             alt=""
                         >
                         <div class="rent">
@@ -420,70 +395,70 @@
                     </div>
                     <div class="card">
                         <img
-                            src="Images/image2.jpg"
+                            src="Images/image26.jpg"
                             alt=""
                         >
                         <div class="rent">
                             <div class="place">
                                 <h3>Apartment</h3>
-                                <p>Lower Kabete</p>
+                                <p>Runda</p>
                             </div>
                             <div class="information">
                                 <span>Duplex</span>
-                                <span>$10,000</span>
+                                <span>$50,000</span>
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <img
-                            src="Images/image2.jpg"
+                            src="Images/image16.jpg"
                             alt=""
                         >
                         <div class="rent">
                             <div class="place">
                                 <h3>Apartment</h3>
-                                <p>Lower Kabete</p>
+                                <p>Karen</p>
                             </div>
                             <div class="information">
                                 <span>Duplex</span>
-                                <span>$10,000</span>
+                                <span>$90,000</span>
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <img
-                            src="Images/image2.jpg"
+                            src="Images/image6.jpg"
                             alt=""
                         >
                         <div class="rent">
                             <div class="place">
                                 <h3>Apartment</h3>
-                                <p>Lower Kabete</p>
+                                <p>Kileleshwa</p>
                             </div>
                             <div class="information">
                                 <span>Duplex</span>
-                                <span>$10,000</span>
+                                <span>$120,000</span>
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <img
-                            src="Images/image2.jpg"
+                            src="Images/more5.jpg"
                             alt=""
                         >
                         <div class="rent">
                             <div class="place">
                                 <h3>Apartment</h3>
-                                <p>Lower Kabete</p>
+                                <p>Lavington</p>
                             </div>
                             <div class="information">
                                 <span>Duplex</span>
-                                <span>$10,000</span>
+                                <span>$200,000</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="" class="button">View More</a>
+                <a href="#" class="button" onclick="return false">View More</a>
             </div>
         </div>
     </section>
@@ -500,33 +475,31 @@
             <div class="cards">
                 <div class="card">
                     <h3>James Kamau</h3>
-                    <span>Kiambu</span>
+                    <span>Nairobi</span>
                     <p>
-                        dfghjklpoiuytresdfgchjbkloiuytfgcvhbnm,
-                        kljhgfdsfghjkl;kjhgfhbjkl;'
-                        lfsdghjkl;'iouytfrdfghjkl;'
+                        I had a fantastic experience with GITHOMES! As a first-time home buyer, I was nervous about the process, but their team 
+                        was incredibly supportive and knowledgeable. They walked me through every step and helped me find the perfect home within my
+                        budget.
                     </p>
                 </div>
                 <div class="card">
-                    <h3>James Kamau</h3>
-                    <span>Kiambu</span>
+                    <h3>Karen Milner</h3>
+                    <span>Cape Town</span>
                     <p>
-                        dfghjklpoiuytresdfgchjbkloiuytfgcvhbnm,
-                        kljhgfdsfghjkl;kjhgfhbjkl;'
-                        lfsdghjkl;'iouytfrdfghjkl;'
+                        GITHOMES made finding a rental property a stress- free experience. They listened to my needs and showed me several options that 
+                        matched my criteria. The application process was straight forward, and I moved into my new apartment without any issues.
                     </p>
                 </div>
                 <div class="card">
-                    <h3>James Kamau</h3>
-                    <span>Kiambu</span>
+                    <h3>Arthur Mung'aro</h3>
+                    <span>Arusha</span>
                     <p>
-                        dfghjklpoiuytresdfgchjbkloiuytfgcvhbnm,
-                        kljhgfdsfghjkl;kjhgfhbjkl;'
-                        lfsdghjkl;'iouytfrdfghjkl;'
+                        Selling my property with GITHOMES was a breeze. Their professional approach and extensive market knowledge made all the difference. They provided excellent advice on staging my home and ensured
+                        it was marketed extensively.
                     </p>
                 </div>
             </div>
-            <a href="" class="button">View More</a>
+            <a href="#" class="button m-5" onclick="return false">View More</a>
         </div>
     </section>
 
@@ -544,30 +517,22 @@
             <div class="menus">
                 <ul class="list-links">
                     <h3>Property</h3>
-                    <li><a href="">Learning Modules</a></li>
+                    <li><a href="">Listings</a></li>
                     <li><a href="">Partnership</a></li>
-                    <li><a href="">Watch demo</a></li>
-                    <li><a href="">Event</a></li>
+                    <li><a href="">Rent</a></li>
+                    <li><a href="">Media</a></li>
                 </ul>
                 <ul class="list-links">
                     <h3>About</h3>
-                    <li><a href="">Learning Modules</a></li>
-                    <li><a href="">Partnership</a></li>
-                    <li><a href="">Watch demo</a></li>
-                    <li><a href="">Event</a></li>
-                </ul>
-                <ul class="list-links">
-                    <h3>Resources</h3>
-                    <li><a href="">Learning Modules</a></li>
-                    <li><a href="">Partnership</a></li>
-                    <li><a href="">Watch demo</a></li>
-                    <li><a href="">Event</a></li>
+                    <li><a href="">Company</a></li>
+                    <li><a href="">Mission</a></li>
+                    <li><a href="">Vision</a></li>
                 </ul>
             </div>
         </div>
     </footer>
 
     <!-- JS -->
-    <script defer src="js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

@@ -1,26 +1,26 @@
 :root {
-    font-size: 62.5%;
+  font-size: 62.5%;
+
+  --nav-height: 7.2rem;
+
+  --primary: #0b3954;
+  --primary-2: hsla(228, 80%, 30%, 0.9);
+  --primary-light: hsla(228, 80%, 30%, 0.1);
+}
   
-    --nav-height: 7.2rem;
-  
-    --primary: hsla(228, 80%, 30%, 1);
-    --primary-2: hsla(228, 80%, 30%, 0.9);
-    --primary-light: hsla(228, 80%, 30%, 0.1);
-  }
-  
-  * {
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-  }
+}
   
-  html,
-  body {
+html,
+body {
     width: 100%;
     height: 100%;
-  }
+}
   
   html {
     scroll-behavior: smooth;
@@ -28,9 +28,9 @@
   
   body {
     font-size: 1.6rem;
-    font-family: "Space Grotesk", sans-serif;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
-    background-color: #fafafa;
+    background-color: #e0dfdf;
   
     overflow: overlay;
     -webkit-tap-highlight-color: transparent;
@@ -45,8 +45,6 @@
   img {
     width: 100%;
     height: auto;
-  
-    border-radius: 0 10rem 0 10rem;
   }
   
   button {
@@ -70,18 +68,16 @@
     margin-bottom: 3rem;
   }
   
-  section:not(#home) {
+section:not(#home) {
     scroll-margin-top: 3rem;
   }
   
   .button {
     padding: 1rem 2rem;
-  
-    background-color: var(--primary);
-    border-radius: 0.8rem;
-  
+    background-color: #003049;
     color: white;
     font-weight: 700;
+    margin-top: 50px;
   }
   
   .button,
@@ -91,12 +87,11 @@
   
   .button:hover,
   button[type="submit"]:hover {
-    background-color: var(--primary-2);
+    background-color: black;
   }
   
   .image {
     position: relative;
-  
     margin-bottom: 5rem;
   }
   
@@ -109,7 +104,6 @@
   
   .card {
     padding: 4rem;
-  
     background-color: white;
   }
   
@@ -127,7 +121,7 @@
     fill: var(--primary);
   }
   
-  /* NAVIGATION ================================= */
+  /* NAVIGATION */
   nav {
     width: 100%;
     height: var(--nav-height);
@@ -160,7 +154,7 @@
     color: var(--primary);
   }
   
-  /* MENU-EXPANDED ================================= */
+  /* MENU-EXPANDED */
   body.menu-expanded {
     overflow: hidden;
   }
@@ -214,7 +208,7 @@
     font-weight: 500;
   }
   
-  /* HOME ================================= */
+  /* HOME */
   #home {
     padding-top: calc(var(--nav-height) + 3rem);
   
@@ -319,7 +313,6 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-  
     padding: 1rem 2rem;
     margin-inline: auto;
   
@@ -332,7 +325,7 @@
     box-shadow: 2rem 2rem 4.8rem rgba(0, 0, 0, 0.1);
   }
   
-  /* SERVICES ================================= */
+  /* SERVICES */
   #services .card {
     display: flex;
     flex-direction: column;
@@ -344,7 +337,7 @@
     width: 5rem;
   }
   
-  /* ABOUT ================================= */
+  /* ABOUT */
   #about header h2 {
     margin-block: 2rem;
   }
@@ -365,7 +358,7 @@
     gap: 1rem;
   }
   
-  /* RENT ================================= */
+  /* RENT */
   #rent .card {
     border-radius: 0 5rem 0 5rem;
   }
@@ -395,11 +388,34 @@
     color: var(--primary);
     font-weight: 600;
   }
+
+  /* AMENITIES STYLING */
+.amenities{
+  margin-top: 3em;
+}
+.amenities-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.amenity{
+  width: 25%;
+  height: auto;
+  margin: 0px;
+  padding: 14px;
+  text-align: center;
+}
+.amenity-content{
+ font-size: 1.5em;
+ padding-top: 8px;
+}
   
   /* TESTIMONIALS */
   #testimonial .card {
     text-align: left;
-  
+    ;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
@@ -407,7 +423,7 @@
   
   /* FOOTER */
   footer {
-    background-color: var(--primary);
+    background-color: #003049;
     padding-block: 4rem;
   }
   

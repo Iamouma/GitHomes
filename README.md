@@ -1,1 +1,1 @@
-GitHomes landing page
+GitHomes landing page.
